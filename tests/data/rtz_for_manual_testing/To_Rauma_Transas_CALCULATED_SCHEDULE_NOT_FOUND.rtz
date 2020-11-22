@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route xmlns="http://www.cirm.org/RTZ/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xmlns:stm="http://stmvalidation.eu/STM/1/0/0" xsi:schemaLocation="http://stmvalidation.eu/STM/1/0/0 stm_extensions.xsd">
+  <routeInfo routeName="Gavle-Rauma (NoSchedule)" routeAuthor="Håkan" vesselName="Unikie Test ship" vesselMMSI="230629000" vesselVoyage="urn:mrn:stm:voyage:id:transas:1150e954-0d38-49af-9a24-a3b8055c846a">
+    <extensions>
+      <extension xsi:type="stm:RouteInfoExtension" manufacturer="STM" name="routeInfoEx" version="1.0.0" routeStatusEnum="7" routeVersion="0E54DF68-6E4A-4616-A9FD-47DEA1A70607">
+        <stm:routeChanges>
+          <stm:historyItem author="NS" reason="creation" dateTime="2019-12-16T15:45:52Z" />
+        </stm:routeChanges>
+      </extension>
+    </extensions>
+  </routeInfo>
+  <waypoints>
+    <defaultWaypoint radius="0.30">
+      <leg portsideXTD="0.20" starboardXTD="0.20" safetyContour="30.00" safetyDepth="30.00" staticUKC="0.00" dynamicUKC="0.00" geometryType="Loxodrome" />
+      <extensions>
+        <extension name="auto_routing" manufacturer="Transas" version="1.0.0" value="Manual" />
+      </extensions>
+    </defaultWaypoint>
+    <waypoint id="10" name="SILVERVIKEN">
+      <position lat="60.69238805" lon="17.23492497" />
+    </waypoint>
+    <waypoint id="11" name="PRINS ALBERT">
+      <position lat="60.69434463" lon="17.24094657" />
+    </waypoint>
+    <waypoint id="14">
+      <position lat="60.70084622" lon="17.26320957" />
+    </waypoint>
+    <waypoint id="15">
+      <position lat="60.71205155" lon="17.27521212" />
+    </waypoint>
+    <waypoint id="16" name="SOLBACKA">
+      <position lat="60.72117395" lon="17.29675143" />
+    </waypoint>
+    <waypoint id="17" name="ETTA FYREN">
+      <position lat="60.73218677" lon="17.32466828" />
+      <leg portsideXTD="0.01" starboardXTD="0.01" />
+    </waypoint>
+    <waypoint id="18" name="YTTERRISKAN">
+      <position lat="60.73597953" lon="17.33189743" />
+    </waypoint>
+    <waypoint id="19" name="GRUBBAN">
+      <position lat="60.74034600" lon="17.34825257" />
+      <leg portsideXTD="0.03" starboardXTD="0.03" />
+    </waypoint>
+    <waypoint id="20">
+      <position lat="60.71709520" lon="17.43533528" />
+      <leg portsideXTD="0.10" starboardXTD="0.10" />
+    </waypoint>
+    <waypoint id="21" name="GRÅSJÄLSBODAN &quot;PILOT BOARDING AREA&quot;">
+      <position lat="60.71285690" lon="17.45808348" />
+    </waypoint>
+    <waypoint id="22" name="VÄKTAREN">
+      <position lat="60.71055000" lon="17.62663333" />
+    </waypoint>
+    <waypoint id="3" radius="1.00">
+      <position lat="60.71671397" lon="17.65433327" />
+      <leg portsideXTD="0.54" starboardXTD="0.54" safetyContour="926.00" />
+    </waypoint>
+    <waypoint id="5" radius="1.00">
+      <position lat="61.13333830" lon="21.13781891" />
+      <leg portsideXTD="0.10" starboardXTD="0.10" />
+    </waypoint>
+    <waypoint id="6" name="RaumaPuilot" radius="0.70">
+      <position lat="61.12649906" lon="21.16768043" />
+    </waypoint>
+    <waypoint id="23" radius="0.70">
+      <position lat="61.11044429" lon="21.22036525" />
+    </waypoint>
+    <waypoint id="7" radius="0.70">
+      <position lat="61.09500052" lon="21.30677860" />
+      <leg portsideXTD="0.03" starboardXTD="0.03" />
+    </waypoint>
+    <waypoint id="8" radius="0.70">
+      <position lat="61.11453468" lon="21.40934603" />
+      <leg portsideXTD="0.03" starboardXTD="0.03" />
+    </waypoint>
+    <waypoint id="9" radius="0.10">
+      <position lat="61.12456500" lon="21.42597282" />
+      <leg portsideXTD="0.03" starboardXTD="0.03" />
+    </waypoint>
+    <extensions>
+      <extension name="geometry_change" manufacturer="Transas" version="1.0.0" last_change_time="2019-12-16T15:45:53.565350Z" />
+    </extensions>
+  </waypoints>
+  <extensions>
+    <extension name="ActivePath" manufacturer="Transas" version="1.0.0">
+      <path xmlns="">
+        <wp_ids>
+          <wp_id value="10" />
+          <wp_id value="11" />
+          <wp_id value="14" />
+          <wp_id value="15" />
+          <wp_id value="16" />
+          <wp_id value="17" />
+          <wp_id value="18" />
+          <wp_id value="19" />
+          <wp_id value="20" />
+          <wp_id value="21" />
+          <wp_id value="22" />
+          <wp_id value="3" />
+          <wp_id value="5" />
+          <wp_id value="6" />
+          <wp_id value="23" />
+          <wp_id value="7" />
+          <wp_id value="8" />
+          <wp_id value="9" />
+        </wp_ids>
+      </path>
+    </extension>
+  </extensions>
+</route>

@@ -1,0 +1,6 @@
+*
+!src/
+!vendor/
+!apache/
+!php/
+!cron/

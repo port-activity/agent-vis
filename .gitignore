@@ -1,0 +1,5 @@
+vendor
+coverage
+.env
+src/lib/init_local.php
+**/.DS_Store

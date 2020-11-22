@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/1" xmlns:stm="http://stmvalidation.eu/STM/1/0/0">
+  <routeInfo routeName="Grundkallen-Gavle" vesselVoyage="urn:mrn:stm:voyage:id:adveto:Charterfrakt202981-Grundkallen-Gavle-2005071457" vesselMMSI="230629000" vesselIMO="9606900" vesselName="Unikie Test ship" routeAuthor="NavOfficer">
+    <extensions>
+      <extension xsi:type="stm:RouteInfoExtension" manufacturer="STM" version="1.0.0" name="routeInfoEx" routeStatusEnum="7" />
+    </extensions>
+  </routeInfo>
+  <waypoints>
+    <defaultWaypoint radius="0.500">
+      <leg speedMax="10.0" />
+    </defaultWaypoint>
+    <waypoint id="1" revision="1" name="WP 0">
+      <position lat="60.42590484" lon="19.05379220" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="2" revision="1" name="WP 1">
+      <position lat="60.57245984" lon="18.98992720" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="3" revision="1" name="WP 2">
+      <position lat="60.72541309" lon="17.84347422" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="4" revision="1" name="VÄKTAREN">
+      <position lat="60.71055000" lon="17.62663333" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="5" revision="1" name="GRÅSJÄLSBODAN &quot;PILOT BOARD">
+      <position lat="60.71285667" lon="17.45808333" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="6" revision="1" name="">
+      <position lat="60.71709500" lon="17.43533500" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="7" revision="1" name="GRUBBAN">
+      <position lat="60.74034667" lon="17.34825333" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="8" revision="1" name="YTTERRISKAN">
+      <position lat="60.73598000" lon="17.33189667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="9" revision="1" name="ETTA FYREN">
+      <position lat="60.73218667" lon="17.32466833" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="10" revision="1" name="SOLBACKA">
+      <position lat="60.72117333" lon="17.29675167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="11" revision="1" name="">
+      <position lat="60.71205167" lon="17.27521167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="12" revision="1" name="">
+      <position lat="60.70084667" lon="17.26321000" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="13" revision="1" name="PRINS ALBERT">
+      <position lat="60.69434500" lon="17.24094667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="14" revision="1" name="SILVERVIKEN">
+      <position lat="60.69238833" lon="17.23492500" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="Default">
+      <manual>
+        <scheduleElement waypointId="1" etd="2020-05-07T12:31:46Z" />
+        <scheduleElement waypointId="2" speed="10.00" />
+        <scheduleElement waypointId="3" speed="10.00" />
+        <scheduleElement waypointId="4" speed="10.00" />
+        <scheduleElement waypointId="5" speed="10.00" />
+        <scheduleElement waypointId="6" speed="10.00" />
+        <scheduleElement waypointId="7" speed="10.00" />
+        <scheduleElement waypointId="8" speed="10.00" />
+        <scheduleElement waypointId="9" speed="10.00" />
+        <scheduleElement waypointId="10" speed="10.00" />
+        <scheduleElement waypointId="11" speed="10.00" />
+        <scheduleElement waypointId="12" speed="10.00" />
+        <scheduleElement waypointId="13" speed="10.00" />
+        <scheduleElement waypointId="14" speed="10.00" />
+      </manual>
+      <calculated>
+        <scheduleElement waypointId="1" etd="2020-05-07T12:31:46Z" />
+        <scheduleElement waypointId="2" etd="2020-05-07T13:06:37Z" eta="2020-05-07T13:06:37Z" speed="10.00" />
+        <scheduleElement waypointId="3" etd="2020-05-07T16:38:00Z" eta="2020-05-07T16:38:00Z" speed="10.00" />
+        <scheduleElement waypointId="4" etd="2020-05-07T17:17:04Z" eta="2020-05-07T17:17:04Z" speed="10.00" />
+        <scheduleElement waypointId="5" etd="2020-05-07T17:46:38Z" eta="2020-05-07T17:46:38Z" speed="10.00" />
+        <scheduleElement waypointId="6" etd="2020-05-07T17:51:13Z" eta="2020-05-07T17:51:13Z" speed="10.00" />
+        <scheduleElement waypointId="7" etd="2020-05-07T18:07:19Z" eta="2020-05-07T18:07:19Z" speed="10.00" />
+        <scheduleElement waypointId="8" etd="2020-05-07T18:11:28Z" eta="2020-05-07T18:11:28Z" speed="10.00" />
+        <scheduleElement waypointId="9" etd="2020-05-07T18:13:36Z" eta="2020-05-07T18:13:36Z" speed="10.00" />
+        <scheduleElement waypointId="10" etd="2020-05-07T18:20:05Z" eta="2020-05-07T18:20:05Z" speed="10.00" />
+        <scheduleElement waypointId="11" etd="2020-05-07T18:24:36Z" eta="2020-05-07T18:24:36Z" speed="10.00" />
+        <scheduleElement waypointId="12" etd="2020-05-07T18:28:52Z" eta="2020-05-07T18:28:52Z" speed="10.00" />
+        <scheduleElement waypointId="13" etd="2020-05-07T18:34:11Z" eta="2020-05-07T18:34:11Z" speed="10.00" />
+        <scheduleElement waypointId="14" eta="2020-05-07T18:35:32Z" speed="10.00" />
+      </calculated>
+    </schedule>
+  </schedules>
+</route>

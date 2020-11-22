@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.cirm.org/RTZ/1/1" xmlns:stm="http://stmvalidation.eu/STM/1/0/0">
+  <routeInfo routeName="Rauma_IN" vesselVoyage="urn:mrn:stm:voyage:id:adveto:Charterfrakt202981-Rauma_IN-2005071314" vesselMMSI="230629000" vesselIMO="9606900" vesselName="Unikie Test ship" routeAuthor="NavOfficer">
+    <extensions>
+      <extension xsi:type="stm:RouteInfoExtension" manufacturer="STM" version="1.0.0" name="routeInfoEx" routeStatusEnum="8" />
+    </extensions>
+  </routeInfo>
+  <waypoints>
+    <defaultWaypoint radius="0.500">
+      <leg speedMax="10.0" />
+    </defaultWaypoint>
+    <waypoint id="1" revision="1" name="Flotjan LH">
+      <position lat="59.91591500" lon="19.29387667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="2" revision="1" name="Solovjeva">
+      <position lat="60.18567333" lon="19.11991667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="3" revision="1" name="WP 18">
+      <position lat="60.25609000" lon="19.04821167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="4" revision="1" name="Marketskallen">
+      <position lat="60.30715000" lon="19.01783833" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="5" revision="1" name="WP 20">
+      <position lat="60.49216167" lon="19.05915000" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="6" revision="1" name="Reportingline">
+      <position lat="61.06686333" lon="20.78726333" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="7" revision="1" name="WP 22">
+      <position lat="61.14046055" lon="21.06896612" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="8" revision="1" name="Rauma pilot boarding groun" radius="0.000">
+      <position lat="61.12085273" lon="21.17000116" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="9" revision="1" name="WP 24">
+      <position lat="61.10525333" lon="21.25038167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="10" revision="1" name="WP 25">
+      <position lat="61.09499333" lon="21.30619167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="11" revision="1" name="WP 26">
+      <position lat="61.11444167" lon="21.40942167" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="12" revision="1" name="WP 27" radius="0.200">
+      <position lat="61.12502833" lon="21.42658667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="13" revision="1" name="Rauma Port">
+      <position lat="61.12543167" lon="21.44107667" />
+      <leg portsideXTD="0.0" starboardXTD="0.0" geometryType="Loxodrome" />
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="Default">
+      <manual>
+        <scheduleElement waypointId="1" etd="2020-05-07T11:14:29Z" />
+        <scheduleElement waypointId="2" speed="10.00" />
+        <scheduleElement waypointId="3" speed="10.00" />
+        <scheduleElement waypointId="4" speed="10.00" />
+        <scheduleElement waypointId="5" speed="10.00" />
+        <scheduleElement waypointId="6" speed="10.00" />
+        <scheduleElement waypointId="7" speed="10.00" />
+        <scheduleElement waypointId="8" speed="10.00" />
+        <scheduleElement waypointId="9" speed="10.00" />
+        <scheduleElement waypointId="10" speed="12.00" />
+        <scheduleElement waypointId="11" speed="10.00" />
+        <scheduleElement waypointId="12" speed="12.00" />
+        <scheduleElement waypointId="13" speed="8.00" />
+      </manual>
+      <calculated>
+        <scheduleElement waypointId="1" etd="2020-05-07T11:14:29Z" />
+        <scheduleElement waypointId="2" etd="2020-05-07T12:56:33Z" eta="2020-05-07T12:56:33Z" speed="10.00" />
+        <scheduleElement waypointId="3" etd="2020-05-07T13:25:00Z" eta="2020-05-07T13:25:00Z" speed="10.00" />
+        <scheduleElement waypointId="4" etd="2020-05-07T13:43:53Z" eta="2020-05-07T13:43:53Z" speed="10.00" />
+        <scheduleElement waypointId="5" etd="2020-05-07T14:50:16Z" eta="2020-05-07T14:50:16Z" speed="10.00" />
+        <scheduleElement waypointId="6" etd="2020-05-07T21:00:12Z" eta="2020-05-07T21:00:12Z" speed="10.00" />
+        <scheduleElement waypointId="7" etd="2020-05-07T21:54:52Z" eta="2020-05-07T21:54:52Z" speed="10.00" />
+        <scheduleElement waypointId="8" etd="2020-05-07T22:15:05Z" eta="2020-05-07T22:15:05Z" speed="10.00" />
+        <scheduleElement waypointId="9" etd="2020-05-07T22:30:10Z" eta="2020-05-07T22:30:10Z" speed="10.00" />
+        <scheduleElement waypointId="10" etd="2020-05-07T22:37:55Z" eta="2020-05-07T22:37:55Z" speed="12.00" />
+        <scheduleElement waypointId="11" etd="2020-05-07T22:57:29Z" eta="2020-05-07T22:57:29Z" speed="10.00" />
+        <scheduleElement waypointId="12" etd="2020-05-07T23:01:43Z" eta="2020-05-07T23:01:43Z" speed="12.00" />
+        <scheduleElement waypointId="13" eta="2020-05-07T23:05:28Z" speed="8.00" />
+      </calculated>
+    </schedule>
+  </schedules>
+</route>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<route xmlns:stm="http://stmvalidation.eu/STM/1/0/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1" xmlns="http://www.cirm.org/RTZ/1/1">
+  <routeInfo routeName="Gavle-Rauma (Difficult to find PBGWP)" routeAuthor="Håkan" routeStatus="PlannedForVoyage" vesselName="Pearl Seaways" vesselMMSI="219945000" vesselIMO="8701674" vesselVoyage="urn:mrn:stm:voyage:id:wartsila:2d1bb3f4-2c7b-42f0-8967-2601cceb840e" vesselSpeedMax="24.9999787843511">
+    <extensions>
+      <extension xsi:type="stm:RouteInfoExtension" manufacturer="STM" name="routeInfoEx" version="1.0.0" routeStatusEnum="7" routeVersion="4bba9539-12d2-4598-ab32-4f88b01abaa1" />
+    </extensions>
+  </routeInfo>
+  <waypoints>
+    <defaultWaypoint radius="0.1">
+      <leg starboardXTD="0.03" portsideXTD="0.03" safetyContour="30" geometryType="Loxodrome" />
+    </defaultWaypoint>
+    <waypoint id="10" name="SILVERVIKEN" radius="0.3">
+      <position lat="60.69238805" lon="17.23492497" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="11" name="PRINS ALBERT" radius="0.3">
+      <position lat="60.69434463" lon="17.24094657" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="14" radius="0.3">
+      <position lat="60.70084622" lon="17.26320957" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="15" radius="0.3">
+      <position lat="60.71205155" lon="17.27521212" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="16" name="SOLBACKA" radius="0.3">
+      <position lat="60.72117395" lon="17.29675143" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="17" name="ETTA FYREN" radius="0.3">
+      <position lat="60.73218677" lon="17.32466828" />
+      <leg starboardXTD="0.01" portsideXTD="0.01" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="18" name="YTTERRISKAN" radius="0.3">
+      <position lat="60.73597953" lon="17.33189743" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="19" name="GRUBBAN" radius="0.3">
+      <position lat="60.740346" lon="17.34825257" />
+      <leg starboardXTD="0.03" portsideXTD="0.03" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="20" radius="0.3">
+      <position lat="60.7170952" lon="17.43533528" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="21" name="GRÅSJÄLSBODAN &quot;PILOT BOARDING AREA&quot;" radius="0.3">
+      <position lat="60.7128569" lon="17.45808348" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="22" name="VÄKTAREN" radius="0.3">
+      <position lat="60.71055" lon="17.62663333" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="3" radius="1">
+      <position lat="60.7167139688758" lon="17.6543332677491" />
+      <leg starboardXTD="0.539956803455724" portsideXTD="0.539956803455724" safetyContour="926" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="5" radius="1">
+      <position lat="61.1319480606626" lon="21.0676717217357" />
+      <leg starboardXTD="0.1" portsideXTD="0.1" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="6" name="RaumaPuilot" radius="0.7">
+      <position lat="61.127060527199" lon="21.1189687042091" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="23" radius="0.7">
+      <position lat="61.110444286254" lon="21.2203652461491" />
+      <leg starboardXTD="0.2" portsideXTD="0.2" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="7" radius="0.7">
+      <position lat="61.09500052" lon="21.3067786" />
+      <leg starboardXTD="0.03" portsideXTD="0.03" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="8" radius="0.7">
+      <position lat="61.11453468" lon="21.40934603" />
+      <leg starboardXTD="0.03" portsideXTD="0.03" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+    <waypoint id="9" radius="0.1">
+      <position lat="61.124565" lon="21.42597282" />
+      <leg starboardXTD="0.03" portsideXTD="0.03" safetyContour="30" geometryType="Loxodrome" />
+    </waypoint>
+  </waypoints>
+  <schedules>
+    <schedule id="1" name="Schedule1">
+      <calculated>
+        <scheduleElement waypointId="11" speed="24.9999787843511" />
+        <scheduleElement waypointId="14" speed="24.9999787843511" />
+        <scheduleElement waypointId="15" speed="24.9999787843511" />
+        <scheduleElement waypointId="16" speed="24.9999787843511" />
+        <scheduleElement waypointId="17" speed="24.9999787843511" />
+        <scheduleElement waypointId="18" speed="24.9999787843511" />
+        <scheduleElement waypointId="19" speed="24.9999787843511" />
+        <scheduleElement waypointId="20" speed="24.9999787843511" />
+        <scheduleElement waypointId="21" speed="24.9999787843511" />
+        <scheduleElement waypointId="22" speed="24.9999787843511" />
+        <scheduleElement waypointId="3" speed="24.9999787843511" />
+        <scheduleElement waypointId="5" speed="24.9999787843511" />
+        <scheduleElement waypointId="6" speed="24.9999787843511" />
+        <scheduleElement waypointId="23" speed="24.9999787843511" />
+        <scheduleElement waypointId="7" speed="24.9999787843511" />
+        <scheduleElement waypointId="8" speed="24.9999787843511" />
+        <scheduleElement waypointId="9" speed="24.9999787843511" />
+      </calculated>
+    </schedule>
+  </schedules>
+</route>

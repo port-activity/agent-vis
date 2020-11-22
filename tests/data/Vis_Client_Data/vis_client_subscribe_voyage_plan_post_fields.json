@@ -1,0 +1,1 @@
+{"endpointMethod":"https:\/\/test.org\/TEST01\/voyagePlans\/subscription?callbackEndpoint=https%3A%2F%2Ftest.url%2FTEST&uvid=urn%3Amrn%3Agov%3Avoyage%3Aid%3Aown%3A1","headers":[{"key":"content-type","value":"text\/xml; charset=utf-8"}],"requestType":"POST"}

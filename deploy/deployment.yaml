@@ -1,0 +1,191 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: agent-vis
+spec:
+  selector:
+    app: agent-vis
+  type: NodePort
+  ports:
+    - protocol: TCP
+      name: vis-agent
+      port: 80
+      targetPort: 80
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agent-vis
+  labels:
+    app: agent-vis
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: agent-vis
+  template:
+    metadata:
+      labels:
+        app: agent-vis
+    spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
+      containers:
+      - name: agent-vis
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}-${CICD_GIT_COMMIT}
+        env:
+          - name: API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_KEY
+          - name: API_URL_NOTIFICATIONS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_NOTIFICATIONS
+          - name: API_URL_MESSAGES
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_MESSAGES
+          - name: API_URL_VOYAGE_PLANS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_VOYAGE_PLANS
+          - name: API_URL_TIMESTAMPS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_TIMESTAMPS
+          - name: API_URL_VIS_VESSELS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_VIS_VESSELS
+          - name: API_URL_INBOUND_VESSELS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: API_URL_INBOUND_VESSELS
+          - name: VIS_SECURE_COMMUNICATIONS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SECURE_COMMUNICATIONS
+          - name: VIS_APP_ID
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_APP_ID
+          - name: VIS_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_API_KEY
+          - name: VIS_GOVERNING_ORG
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_GOVERNING_ORG
+          - name: VIS_OWN_ORG
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_OWN_ORG
+          - name: VIS_SERVICE_INSTANCE_URL
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SERVICE_INSTANCE_URL
+          - name: VIS_PRIVATE_SIDE_PORT
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_PRIVATE_SIDE_PORT
+          - name: VIS_SERVICE_INSTANCE_URN
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SERVICE_INSTANCE_URN
+          - name: VIS_RTZ_ROUTE_AUTHOR
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_RTZ_ROUTE_AUTHOR
+          - name: VIS_RTZ_SCHEDULE_NAME
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_RTZ_SCHEDULE_NAME
+          - name: VIS_PORT_LAT
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_PORT_LAT
+          - name: VIS_PORT_LON
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_PORT_LON
+          - name: VIS_PORT_RADIUS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_PORT_RADIUS
+          - name: VIS_SYNC_POINT_NAME
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SYNC_POINT_NAME
+          - name: VIS_SYNC_POINT_LAT
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SYNC_POINT_LAT
+          - name: VIS_SYNC_POINT_LON
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SYNC_POINT_LON
+          - name: VIS_SYNC_POINT_RADIUS
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_SYNC_POINT_RADIUS
+          - name: VIS_OUTPUT_DIRECTORY
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: VIS_OUTPUT_DIRECTORY
+          - name: AINO_API_KEY
+            valueFrom:
+              secretKeyRef:
+                name: agent-vis
+                key: AINO_API_KEY
+        ports:
+        - containerPort: 80
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: agent-vis-poll
+spec:
+  schedule: "* * * * *"
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      activeDeadlineSeconds: 120
+      backoffLimit: 1
+      template:
+        spec:
+          restartPolicy: Never
+          imagePullSecrets:
+          - name: pipeline-docker-registry
+          containers:
+          - name: agent-vis-poll
+            image: curlimages/curl:latest
+            args:
+            - curl
+            - http://agent-vis/api.php/poll-save

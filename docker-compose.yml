@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  agent-vis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stop_signal: SIGINT
+    volumes:
+      - ./src:/var/www/src:rw,consistent
+      - ./vendor:/var/www/vendor:rw,consistent
+    ports:
+      - "8888:80"
+    container_name: spia-agent-vis
+    env_file: .env
+
+volumes:
+  src:
+  vendor:
